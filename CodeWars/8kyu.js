@@ -74,7 +74,13 @@ function popElement(arr){
 
 
 
-
+// sum arrays 
+function sum(numbers) {
+  if (numbers.length == 0) {
+    return 0;
+  }
+  return numbers.reduce((next, prev) => next + prev);
+}
 
 
 
