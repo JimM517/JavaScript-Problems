@@ -40,9 +40,28 @@ function findMissingLetter(arr) {
 
 
 
+// weird string case
+function toWeirdCase(string) {
+    let arr = string.split(" ");
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let weirdWord = "";
+        for (let j = 0; j < arr[i].length; j++) {
+            if (j % 2 == 0) {
+                weirdWord += arr[i][j].toUpperCase();
+            } else {
+                weirdWord += arr[i][j].toLowerCase();
+            }
+        }
+        result.push(weirdWord);
+    }
+    
+
+    return result.join(" ");
 
 
-
+}
 
 
 
