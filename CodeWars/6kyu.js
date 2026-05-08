@@ -65,7 +65,22 @@ function toWeirdCase(string) {
 
 
 
+// find the unique number
+function findUniq(arr) {
+    let numMap = {};
+    
+    for (let i = 0; i < arr.length; i++) {
+        numMap[arr[i]] = (numMap[arr[i]] || 0) + 1;
+    }
 
+    for (let key in numMap) {
+        if (numMap[key] == 1) {
+            return Number(key);
+        }
+    }
+
+
+}
 
 
 
