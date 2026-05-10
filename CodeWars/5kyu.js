@@ -110,7 +110,25 @@ function domainName(url) {
 
 
 
-domainName("http://github.com/carbonfive/raygun" );
+// max subarray sum
+var maxSequence = function(arr) {
+
+    let current = 0;
+    let maxVal = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+
+        current = Math.max(arr[i], current + arr[i]);
+        maxVal = Math.max(maxVal, current);
+
+
+    }
+
+
+    return maxVal;
+
+
+}
 
 
 
