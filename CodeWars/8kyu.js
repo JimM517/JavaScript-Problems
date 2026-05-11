@@ -109,7 +109,10 @@ function arrayDiff(a, b) {
 }
 
 
-
+// be concise IV - index of an element in an array
+function find(a,e) {
+  return(i=a.indexOf(e))+1?i:"Not found"
+}
 
 
 
