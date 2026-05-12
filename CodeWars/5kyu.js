@@ -135,7 +135,25 @@ var maxSequence = function(arr) {
 
 
 
+// is my friend cheating??
+function removeNb(n) {
 
+     const total = (n * (n + 1)) / 2;
+    const res = [];
+
+    for (let a = 1; a <= n; a++) {
+        let b = (total - a) / (a + 1);
+
+        if (Number.isInteger(b) && b <= n) {
+            res.push([a, b]);
+        }
+    }
+
+    return res;
+
+
+
+}
 
 
 
