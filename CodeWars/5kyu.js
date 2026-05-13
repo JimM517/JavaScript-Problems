@@ -272,6 +272,25 @@ function add(n) {
 
 
 
+// first non-repeating character
+function firstNonRepeatingLetter(s) {
+  // Add your code here
+  let charMap = {};
+
+   
+    for (let char of s.toLowerCase()) {
+        charMap[char] = (charMap[char] || 0) + 1;
+    }
+
+    for (let char of s) {
+        if (charMap[char.toLowerCase()] === 1) {
+            return char;
+        }
+    }
+
+    return "";
+}
+
 
 
 
