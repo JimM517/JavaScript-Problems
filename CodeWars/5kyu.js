@@ -157,6 +157,28 @@ function removeNb(n) {
 
 
 
+// integers / recreation one
+function listSquared(m, n) {
+
+    let res = []
+    for (let i = m; i <= n; i++) {
+        let sum = 0;
+        for (let j = 1; j <= i; j++) {
+            if (i % j == 0) {
+                sum += j * j;
+            }
+        }
+        let root = Math.sqrt(sum);
+
+        if (Number.isInteger(root)) {
+            res.push([i, sum]);
+        }
+    }
+    return res;
+}
+
+
+
 
 
 
