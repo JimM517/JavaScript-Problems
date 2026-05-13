@@ -220,6 +220,30 @@ function moveZeros(arr) {
 
 
 
+// scramblies
+function scramble(str1, str2) {
+
+    let map = {};
+
+    
+    for (let char of str1) {
+        map[char] = (map[char] || 0) + 1;
+    }
+
+   
+    for (let char of str2) {
+        if (!map[char]) {
+            return false;
+        }
+        map[char]--;
+    }
+
+    return true;
+
+
+
+
+}
 
 
 
