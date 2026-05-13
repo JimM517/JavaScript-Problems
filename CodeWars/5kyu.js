@@ -247,6 +247,24 @@ function scramble(str1, str2) {
 
 
 
+// a chain adding function
+function add(n) {
+
+
+    function next(x) {
+        return add(n + x);
+    }
+
+    next.valueOf = function() {
+        return n;
+    }
+
+    return next;
+
+
+}
+
+
 
 
 
