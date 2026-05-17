@@ -109,6 +109,28 @@ function evenLast(numbers) {
 
 
 
+// dinner plans
+function commonGround(s1, s2) {
+
+    let s1Set = new Set(s1.split(" "));
+    let s2Arr = s2.split(" ");
+
+    let result = [];
+    let seen = new Set();
+
+    for (let word of s2Arr) {
+        if (s1Set.has(word) && !seen.has(word)) {
+            result.push(word);
+            seen.add(word);
+        }
+    }
+
+    return result.length ? result.join(" ") : "death";
+
+}
+
+
+
 
 
 
