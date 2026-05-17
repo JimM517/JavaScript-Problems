@@ -83,7 +83,29 @@ function wordValues(words) {
 
 
 
+// even times last
+function evenLast(numbers) {
 
+    let total = 0;
+
+    if (numbers.length == 0) {
+        return 0;
+    }
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (i % 2 == 0) {
+            total += numbers[i];
+        }
+
+
+    }
+
+    return total * numbers[numbers.length - 1];
+
+
+
+}
 
 
 
