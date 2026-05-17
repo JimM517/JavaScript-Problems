@@ -58,6 +58,7 @@ function countConsonants(str) {
 }
 
 
+// word values
 function wordValues(words) {
 
     let result = [];
