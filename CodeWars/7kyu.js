@@ -33,7 +33,29 @@ function dropWhile(array, predicate) {
 
 
 
+// how many unique consonants?
+function countConsonants(str) {
 
+    let vowels = "aeiou";
+    const conSet = new Set();
+
+    for (let i = 0; i < str.length; i++) {
+
+        let char = str.charAt(i).toLowerCase();
+
+        if (
+            char >= 'a' &&
+            char <= 'z' &&
+            !vowels.includes(char)
+        ) {
+            conSet.add(char);
+        }
+    }
+
+    return conSet.size;
+
+
+}
 
 
 
