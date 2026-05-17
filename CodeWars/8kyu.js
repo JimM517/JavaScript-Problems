@@ -129,7 +129,24 @@ const reverseSeq = n => {
 
 
 
+// alternating case
+String.prototype.toAlternatingCase = function () {
+  // Define your method here :)
+  let result = "";
 
+    for (let i = 0; i < this.length; i++) {
+
+        let char = this.charAt(i);
+
+        if (char === char.toUpperCase()) {
+            result += char.toLowerCase();
+        } else {
+            result += char.toUpperCase();
+        }
+    }
+
+    return result;
+}
 
 
 
