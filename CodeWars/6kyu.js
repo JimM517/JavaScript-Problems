@@ -85,7 +85,23 @@ function findUniq(arr) {
 
 
 
+// detect pangram
+function isPangram(string) {
 
+    let charSet = new Set();
+
+    for (let char of string.toLowerCase()) {
+       if (char >= 'a' && char <= 'z') {
+        charSet.add(char);
+       }
+    }
+
+
+    return charSet.size === 26;
+
+
+
+}
 
 
 
