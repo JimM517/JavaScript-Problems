@@ -58,4 +58,59 @@ function countConsonants(str) {
 }
 
 
+function wordValues(words) {
+
+    let result = [];
+
+  for (let i = 0; i < words.length; i++) {
+    let sum = 0;
+
+    for (let char of words[i]) {
+      if (char !== ' ') {
+        sum += char.charCodeAt(0) - 96;
+      }
+    }
+
+    result.push(sum * (i + 1));
+  }
+
+  return result;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
