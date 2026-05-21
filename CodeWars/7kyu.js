@@ -131,6 +131,17 @@ function commonGround(s1, s2) {
 
 
 
+// anagram detection
+var isAnagram = function(test, original) {
+    const sortedTest = test.toLowerCase().split("").sort().join("");
+    const sortedOrg = original.toLowerCase().split("").sort().join("");
+
+
+    return sortedTest === sortedOrg;
+
+
+}
+
 
 
 
